@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios aula 13</title>
+</head>
+<body>
+    
+    <script>
+     const nome = prompt ("Digite seu nome completo: ");
+     document.body.innerHTML +=  `O seu nome é: ${nome} <br /> `; 
+     document.body.innerHTML +=  `Seu nome tem ${nome.length} letras <br /> `;  
+     document.body.innerHTML +=  `A segunda letra do seu nome é: ${nome[1]}  <br /> `;  
+     document.body.innerHTML +=  `Qual é o primeiro indice da letra do seu nome?: ${nome.indexOf()} <br /> `;  
+     document.body.innerHTML +=  `Qual é o último indice da letra do seu nome? ${nome.lastIndexOf()} : <br /> `;  
+     document.body.innerHTML +=  `As ultimas 3 letras do seu nome são:${nome.slice(-3)} <br /> `;  
+     document.body.innerHTML +=  `Seu nome com letras maisculas : ${nome.toLocaleUpperCase()} <br /> `; 
+     document.body.innerHTML +=  `Seu nome com letras minusculas: ${nome.toLocaleLowerCase()} <br /> `; 
+
+    </script>
+</body>
+</html>
+
+/*
+Resumo sobre strings:
+
+- Os índices começam em 0.
+  Ex.: "Pedro"
+  P = 0, e = 1, d = 2, r = 3, o = 4
+
+- nome.length informa a quantidade de caracteres.
+  Ex.: "Pedro".length = 5
+
+- nome[1] acessa o caractere que está no índice 1.
+
+- nome.slice(-3) retorna os últimos 3 caracteres da string.
+
+- nome.indexOf('a') retorna o índice da PRIMEIRA ocorrência de 'a'.
+
+- nome.lastIndexOf('a') retorna o índice da ÚLTIMA ocorrência de 'a'.
+
+- Se indexOf() ou lastIndexOf() não encontrarem o caractere,
+  retornam -1.
+
+- JavaScript diferencia letras maiúsculas de minúsculas.
+  'A' é diferente de 'a'.
+*/
